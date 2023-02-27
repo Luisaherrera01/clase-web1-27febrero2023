@@ -43,12 +43,12 @@ let persona = {
 personas.unshift(persona)
 }
 
+
+// PARA MOSTRAR LA INFORMACION
+
 console.log('recorrido con for')
-for (let index = 0; index < personas.length; index++) {
-    
-    console.log(personas[index]);
-    
-    
+for (let index = 0; index < personas.length; index++) { 
+    console.log(personas[index]);  
 }
 
 // console.table(persona)//con .table muestra los datos en una tabla
@@ -61,9 +61,17 @@ console.log('recorrido con forEach')
 personas.forEach((persona)=>{
     console.log(persona)
 })
+
 //personas.forEach(function()=>{})
 console.log('recorrido con .map')
 personas.map((persona)=>{
     console.log(persona)
 })
+
+
+// //forOf
+// for (const persona of personas) {
+//     console.log(persona)
+// }
+
 
